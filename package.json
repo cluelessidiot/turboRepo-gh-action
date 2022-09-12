@@ -4,7 +4,6 @@
     "build": "turbo run build",
     "test": "turbo run test"
   },
-  "workspaces": [],
   "devDependencies": {
     "turbo": "1.2.5"
   }
