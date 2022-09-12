@@ -4,7 +4,7 @@ on:
   push:
     branches: ["main"]
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize,]
  
 jobs:
   build:
@@ -30,6 +30,8 @@ jobs:
  
         - name: Install dependencies
           run: yarn
+        - name: setting workspace
+          run: yarn config set workspaces-experimental true  
  
         - name: Build
           run: yarn build
